@@ -4,29 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- SEO PRIMARY -->
+<!-- SEO -->
 <title>Subramanyam Sahoo — AI Safety Researcher</title>
 <meta name="description" content="Subramanyam Sahoo is an independent AI safety researcher working on adversarial alignment, mechanistic interpretability, and AI governance. NIT Hamirpur gold medalist. MARS 4.0 fellow, Cambridge AI Safety Hub.">
-<meta name="keywords" content="AI safety researcher, AI alignment, mechanistic interpretability, adversarial robustness, AI governance, Subramanyam Sahoo, independent researcher, India, NIT Hamirpur, sycophancy reduction, RLHF, LLM alignment">
+<meta name="keywords" content="AI safety researcher, AI alignment, mechanistic interpretability, adversarial robustness, AI governance, Subramanyam Sahoo, NIT Hamirpur, sycophancy reduction, RLHF, LLM alignment, independent researcher India">
 <meta name="author" content="Subramanyam Sahoo">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://subramanyamsahoo.github.io/">
 
-<!-- OPEN GRAPH -->
 <meta property="og:type"        content="profile">
 <meta property="og:title"       content="Subramanyam Sahoo — AI Safety Researcher">
 <meta property="og:description" content="Independent AI safety researcher. Mechanistic interpretability, adversarial alignment, AI governance. MARS 4.0 fellow. NeurIPS, ICLR, AAAI.">
 <meta property="og:url"         content="https://subramanyamsahoo.github.io/">
-<meta property="og:site_name"   content="Subramanyam Sahoo">
 
-<!-- TWITTER CARD -->
-<meta name="twitter:card"        content="summary">
-<meta name="twitter:site"        content="@iamwsubramanyam">
-<meta name="twitter:creator"     content="@iamwsubramanyam">
-<meta name="twitter:title"       content="Subramanyam Sahoo — AI Safety Researcher">
+<meta name="twitter:card"    content="summary">
+<meta name="twitter:site"    content="@iamwsubramanyam">
+<meta name="twitter:creator" content="@iamwsubramanyam">
+<meta name="twitter:title"   content="Subramanyam Sahoo — AI Safety Researcher">
 <meta name="twitter:description" content="Independent AI safety researcher. Mechanistic interpretability, adversarial alignment, AI governance.">
 
-<!-- SCHEMA.ORG JSON-LD -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -43,557 +39,687 @@
     "https://huggingface.co/SahoobhAI",
     "https://medium.com/@wsubramanyamsahoo"
   ],
-  "alumniOf": [
-    {
-      "@type": "EducationalOrganization",
-      "name": "National Institute of Technology Hamirpur",
-      "description": "M.Tech in Artificial Intelligence — Gold Medalist, Summa Cum Laude"
-    }
-  ],
-  "knowsAbout": [
-    "AI Safety",
-    "AI Alignment",
-    "Mechanistic Interpretability",
-    "Reinforcement Learning",
-    "AI Governance",
-    "Large Language Models"
-  ]
+  "alumniOf": { "@type": "EducationalOrganization", "name": "National Institute of Technology Hamirpur" },
+  "knowsAbout": ["AI Safety","AI Alignment","Mechanistic Interpretability","Reinforcement Learning","AI Governance","LLM"]
 }
 </script>
 
-<!-- FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAV -->
-<nav class="nav" role="navigation" aria-label="Main navigation">
-  <div class="nav-id">
-    <div class="nav-dot" aria-hidden="true"></div>
-    <span class="nav-name">Subramanyam Sahoo</span>
+<!-- ── NAV ── -->
+<nav class="nav" role="navigation">
+  <div class="nav-inner">
+    <a class="nav-name" href="#" onclick="switchTab('home')">Subramanyam Sahoo</a>
+    <ul class="nav-tabs" role="tablist">
+      <li class="nav-tab active" data-tab="home"            role="tab">Home</li>
+      <li class="nav-tab"        data-tab="publications"    role="tab">Publications</li>
+      <li class="nav-tab"        data-tab="software"        role="tab">Software</li>
+      <li class="nav-tab"        data-tab="talks"           role="tab">Talks</li>
+      <li class="nav-tab"        data-tab="group"           role="tab">Group</li>
+      <li class="nav-tab"        data-tab="teaching"        role="tab">Teaching</li>
+      <li class="nav-tab"        data-tab="service"         role="tab">Service</li>
+      <li class="nav-tab"        data-tab="extra"           role="tab">Extracurriculars</li>
+    </ul>
   </div>
-  <ul class="nav-tabs" role="tablist">
-    <li class="nav-tab active" role="tab" aria-selected="true"  data-tab="home">Home</li>
-    <li class="nav-tab"        role="tab" aria-selected="false" data-tab="research">Research</li>
-    <li class="nav-tab"        role="tab" aria-selected="false" data-tab="papers">Papers</li>
-    <li class="nav-tab"        role="tab" aria-selected="false" data-tab="achievements">Achievements</li>
-    <li class="nav-tab"        role="tab" aria-selected="false" data-tab="about">About</li>
-  </ul>
 </nav>
 
-<!-- ══════════════════════════════════════════
-     TAB: HOME
-══════════════════════════════════════════ -->
-<main id="tab-home" class="page active" role="tabpanel">
+<!-- ════════════════════════════
+     HOME
+════════════════════════════ -->
+<main id="tab-home" class="page active">
 
-  <div class="hero">
-    <p class="hero-eyebrow">Independent AI Safety Researcher · Cuttack, India</p>
-    <h1 class="hero-h1">
-      Alignment that holds<br>
-      under <em>adversarial pressure</em>
-    </h1>
-    <p class="hero-sub">
-      I work on building AI systems that remain reliably aligned when pushed — through mechanistic interpretability, adversarial self-play, and governance frameworks that account for how institutions fail, not just how models do.
-    </p>
-    <div class="hero-links">
-      <a class="hero-link" href="https://scholar.google.com/citations?user=nCPzp6YAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-      <a class="hero-link" href="https://github.com/SubramanyamSahoo" target="_blank" rel="noopener">GitHub</a>
-      <a class="hero-link" href="https://huggingface.co/SahoobhAI" target="_blank" rel="noopener">HuggingFace</a>
-      <a class="hero-link" href="https://www.linkedin.com/in/sahoosubramanyam/" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="hero-link" href="https://x.com/iamwsubramanyam" target="_blank" rel="noopener">X / Twitter</a>
-      <a class="hero-link" href="https://medium.com/@wsubramanyamsahoo" target="_blank" rel="noopener">Writing</a>
-    </div>
-  </div>
+  <!-- PROFILE -->
+  <div class="profile">
+    <div class="wrap">
+      <div class="profile-inner">
 
-  <!-- STAT STRIP -->
-  <div class="stat-strip" aria-label="Key statistics">
-    <div class="stat-strip-inner">
-      <div class="stat">
-        <div class="stat-num">9+</div>
-        <div class="stat-label">Workshop Papers</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">4</div>
-        <div class="stat-label">Active Research Directions</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">3</div>
-        <div class="stat-label">Grants & Fellowships</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">1st</div>
-        <div class="stat-label">NIT Hamirpur — Gold Medal</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- QUICK RESEARCH OVERVIEW -->
-  <div class="section">
-    <div class="section-label">Core Research Focus</div>
-    <div class="research-grid">
-      <div class="r-card">
-        <div class="r-num">01 / Adversarial Alignment</div>
-        <div class="r-title">Breaking sycophancy through minimax self-play</div>
-        <div class="r-body">AdverSplay-GRPO: dual LoRA adapters on a frozen Qwen3-32B base achieving 89.3% sycophancy reduction without capability degradation.</div>
-        <span class="r-tag">COLM 2026 · In Preparation</span>
-      </div>
-      <div class="r-card">
-        <div class="r-num">02 / Mechanistic Interpretability</div>
-        <div class="r-title">What is actually computed inside specification-gaming models</div>
-        <div class="r-body">Tracing the mechanistic origins of specification gaming in transformer circuits. Joint work with Amirali Abdullah, Thoughtworks.</div>
-        <span class="r-tag">ACL 2026 · Under Review</span>
-      </div>
-      <div class="r-card">
-        <div class="r-num">03 / Belief Geometry</div>
-        <div class="r-title">How belief-states form and degrade in RL agents</div>
-        <div class="r-body">Geometric fingerprints of belief-state representations across training. R² > 0.993 decodability results. With Prof. Fernando Rosas, Sussex.</div>
-        <span class="r-tag">RLC 2026 · Under Review</span>
-      </div>
-      <div class="r-card">
-        <div class="r-num">04 / AI Governance</div>
-        <div class="r-title">Alignment failures from institutional structures</div>
-        <div class="r-body">The Headless Agent Problem in military AI. Propaganda as an objective function. Why containment cannot remove Machiavellian knowledge from weights.</div>
-        <span class="r-tag">arXiv:2603.03515 · Published</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- FEATURED RECOGNITION -->
-  <div class="section">
-    <div class="section-label">Recognition</div>
-    <div class="rec-row"><span class="rec-marker">◆</span><span class="rec-text">ICLR 2026 — AI 4 Peace Workshop — <strong style="color:var(--gold)">Oral Presentation</strong></span></div>
-    <div class="rec-row"><span class="rec-marker">◆</span><span class="rec-text">AIM Intelligence AI Safety Compute Grant, South Korea — accepted as PI</span></div>
-    <div class="rec-row"><span class="rec-marker">◆</span><span class="rec-text">MARS 4.0 Fellow — Cambridge AI Safety Hub</span></div>
-    <div class="rec-row"><span class="rec-marker">◆</span><span class="rec-text">Gold Medalist, M.Tech in AI — NIT Hamirpur (2024), summa cum laude</span></div>
-    <div class="rec-row"><span class="rec-marker">◆</span><span class="rec-text">Featured in Bloomberg — Intelligence Symbiosis Manifesto signatory</span></div>
-  </div>
-
-  <div class="quote-block">
-    <blockquote>"What I know is a drop, and what I don't know is a sea."</blockquote>
-    <p class="quote-attr">— Isaac Newton</p>
-  </div>
-
-</main>
-
-<!-- ══════════════════════════════════════════
-     TAB: RESEARCH
-══════════════════════════════════════════ -->
-<main id="tab-research" class="page" role="tabpanel">
-  <div class="section">
-    <div class="section-label">Research Directions</div>
-    <div class="research-grid">
-
-      <div class="r-card">
-        <div class="r-num">01</div>
-        <div class="r-title">Adversarial Self-Play in Alignment</div>
-        <div class="r-body">
-          Most alignment methods teach models what to say. AdverSplay-GRPO teaches models what not to hide. The framework pits a sycophancy-generating adversary against an honest responder in a minimax loop — using dual LoRA adapters on a frozen Qwen3-32B base with Group Relative Policy Optimisation.<br><br>
-          Result: 89.3% sycophancy reduction. The adversarial training surface forces the model to develop genuinely robust honest reasoning rather than surface-level compliance.
+        <!-- PHOTO: replace src with your actual photo URL -->
+        <div>
+          <img
+            class="profile-photo"
+            src="photo.jpg"
+            alt="Subramanyam Sahoo"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          >
+          <div class="profile-photo-placeholder" style="display:none;">S</div>
         </div>
-        <span class="r-tag">Breaking the Mirror · COLM 2026</span>
-      </div>
 
-      <div class="r-card">
-        <div class="r-num">02</div>
-        <div class="r-title">Mechanistic Origins of Specification Gaming</div>
-        <div class="r-body">
-          When a model games its objective, what is the circuit-level computation that produces that behaviour? Joint work with Amirali Abdullah (Thoughtworks) using activation patching, attention head ablation, and causal tracing on transformer models exhibiting reward hacking patterns.<br><br>
-          The goal: find the internal features that make specification gaming possible, then understand whether they can be surgically removed without destroying the underlying capability.
+        <div>
+          <h1 class="profile-name">Subramanyam Sahoo</h1>
+          <p class="profile-role">Independent AI Safety Researcher</p>
+          <p class="profile-loc">Cuttack, Odisha, India &nbsp;·&nbsp; he/him</p>
+          <p class="profile-bio">
+            I work on building AI systems that remain reliably aligned under adversarial conditions — through mechanistic interpretability, adversarial self-play, and governance frameworks that address institutional failure, not just model failure. NIT Hamirpur gold medalist. MARS 4.0 fellow, Cambridge AI Safety Hub.
+          </p>
+
+          <!-- SOCIAL LINKS -->
+          <div class="socials">
+            <a class="soc" href="https://scholar.google.com/citations?user=nCPzp6YAAAAJ" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+              Google Scholar
+            </a>
+            <a class="soc" href="https://github.com/SubramanyamSahoo" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a class="soc" href="https://huggingface.co/SahoobhAI" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M10.188 3.6c-.32.07-.637.189-.93.353C8.03 4.656 7.18 6.112 7.18 7.67c0 .332.034.657.097.97a5.29 5.29 0 0 0-2.45 4.443c0 2.922 2.367 5.29 5.29 5.29.51 0 1.002-.073 1.47-.208a3.73 3.73 0 0 0 2.826 1.295 3.73 3.73 0 0 0 2.826-1.295 5.254 5.254 0 0 0 1.47.208c2.922 0 5.29-2.368 5.29-5.29a5.29 5.29 0 0 0-2.451-4.443c.063-.313.097-.638.097-.97 0-1.558-.85-3.014-2.078-3.717a3.547 3.547 0 0 0-.93-.353 3.547 3.547 0 0 0-3.224.974 3.547 3.547 0 0 0-3.224-.974z"/></svg>
+              HuggingFace
+            </a>
+            <a class="soc" href="https://www.linkedin.com/in/sahoosubramanyam/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a class="soc" href="https://x.com/iamwsubramanyam" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Twitter / X
+            </a>
+            <a class="soc" href="https://medium.com/@wsubramanyamsahoo" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+              Medium
+            </a>
+          </div>
+
+          <!-- STATS -->
+          <div class="stats">
+            <div><div class="st-num">9+</div><div class="st-lbl">Workshop Papers</div></div>
+            <div><div class="st-num">4</div><div class="st-lbl">Research Directions</div></div>
+            <div><div class="st-num">3</div><div class="st-lbl">Grants &amp; Fellowships</div></div>
+            <div><div class="st-num">1st</div><div class="st-lbl">NIT Hamirpur · Gold Medal</div></div>
+          </div>
         </div>
-        <span class="r-tag">ACL 2026 · Under Review</span>
       </div>
+    </div>
+  </div>
 
-      <div class="r-card">
-        <div class="r-num">03</div>
-        <div class="r-title">Belief Geometry in Deep RL</div>
-        <div class="r-body">
-          Collaboration with Prof. Fernando Rosas (University of Sussex) through the MARS 4.0 program at the Cambridge AI Safety Hub. We study how belief-state representations form geometrically across training — and what their structure reveals about the agent's implicit world model.<br><br>
-          Key finding: R² > 0.993 belief-state decodability from latent representations, suggesting that internal belief structure is far more legible than previously assumed.
+  <!-- RESEARCH OVERVIEW -->
+  <div class="wrap">
+    <div class="sec">
+      <div class="sec-head">Research Overview</div>
+      <div class="r-grid">
+        <div class="r-card">
+          <div class="r-num">01 / Adversarial Alignment</div>
+          <div class="r-title">Breaking sycophancy through minimax self-play</div>
+          <div class="r-body">AdverSplay-GRPO: dual LoRA adapters on a frozen Qwen3-32B base achieving 89.3% sycophancy reduction without capability degradation.</div>
+          <span class="r-tag">COLM 2026 · In Preparation</span>
         </div>
-        <span class="r-tag">RLC 2026 · Under Review</span>
-      </div>
-
-      <div class="r-card">
-        <div class="r-num">04</div>
-        <div class="r-title">Structured Ignorance Certificates</div>
-        <div class="r-body">
-          Models fail silently. The problem is not just that they are wrong — it is that they do not know they are wrong in a structured, auditable way. This project investigates how to make models produce explicit, verifiable representations of their own epistemic boundaries.<br><br>
-          Running experiments on Qwen3-14B on Lambda Labs A100 infrastructure. Targeting EIML @ ICML 2026.
+        <div class="r-card">
+          <div class="r-num">02 / Mechanistic Interpretability</div>
+          <div class="r-title">Circuit-level origins of specification gaming</div>
+          <div class="r-body">Tracing mechanistic origins of specification gaming in transformer circuits. With Amirali Abdullah, Thoughtworks.</div>
+          <span class="r-tag">ACL 2026 · Under Review</span>
         </div>
-        <span class="r-tag">EIML @ ICML 2026 · Active</span>
+        <div class="r-card">
+          <div class="r-num">03 / Belief Geometry in RL</div>
+          <div class="r-title">How belief-states form and degrade in RL agents</div>
+          <div class="r-body">R² > 0.993 belief-state decodability from latent representations. With Prof. Fernando Rosas, University of Sussex. MARS 4.0.</div>
+          <span class="r-tag">RLC 2026 · Under Review</span>
+        </div>
+        <div class="r-card">
+          <div class="r-num">04 / AI Governance</div>
+          <div class="r-title">Alignment failures from institutional structures</div>
+          <div class="r-body">The Headless Agent Problem in military AI. Propaganda as an objective function. Why containment cannot remove Machiavellian knowledge from weights.</div>
+          <span class="r-tag">Published · Governance Papers</span>
+        </div>
       </div>
-
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-label">Governance Research</div>
-    <div class="inv-item">
-      <div class="inv-bar"></div>
-      <div>
-        <div class="inv-title">The Headless Agent Problem in Military AI</div>
-        <div class="inv-sub" style="margin-bottom:0.5rem">arXiv:2603.03515</div>
-        <div class="r-body">Alignment failures that arise not from model internals but from the absence of a coherent decision-making authority above the model. When no human is meaningfully in the loop, the alignment problem changes shape entirely.</div>
-      </div>
-    </div>
-    <div class="inv-item">
-      <div class="inv-bar"></div>
-      <div>
-        <div class="inv-title">Propaganda is an Objective, Not Content</div>
-        <div class="inv-sub" style="margin-bottom:0.5rem">ICML Agents in the Wild Workshop · In Preparation</div>
-        <div class="r-body">The standard framing of AI propaganda detection treats propaganda as a content category. This paper argues it is better understood as an optimisation objective — which changes what defences are possible.</div>
-      </div>
-    </div>
-    <div class="inv-item">
-      <div class="inv-bar"></div>
-      <div>
-        <div class="inv-title">The Containment Fallacy</div>
-        <div class="inv-sub" style="margin-bottom:0.5rem">In Progress</div>
-        <div class="r-body">Alignment methods cannot remove Machiavellian knowledge from model weights through fine-tuning alone. The knowledge persists under distributional shift even when surface behaviour changes. This paper formalises why containment is structurally insufficient as an alignment strategy.</div>
-      </div>
-    </div>
-    <div class="inv-item">
-      <div class="inv-bar"></div>
-      <div>
-        <div class="inv-title">SAHOO: Recursive Self-Improvement Under Alignment Constraints</div>
-        <div class="inv-sub" style="margin-bottom:0.5rem">arXiv:2603.06333 · GitHub: SubramanyamSahoo/SAHOO-in-Recursive-Self-Improvement</div>
-        <div class="r-body">A framework for studying how alignment constraints interact with recursive self-improvement dynamics — what breaks, what holds, and what new failure modes emerge at scale.</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-label">Open to Collaboration</div>
-    <div class="tags">
-      <span class="tag">LLM Post-training</span>
-      <span class="tag">Reinforcement Learning from Human Feedback</span>
-      <span class="tag">Mechanistic Interpretability</span>
-      <span class="tag">AI Control</span>
-      <span class="tag">Adversarial Robustness</span>
-      <span class="tag">Cooperative AI</span>
-      <span class="tag">Science of Evaluations</span>
-      <span class="tag">AI Policy & Governance</span>
-      <span class="tag">Autonomous AI Agents</span>
-      <span class="tag">Belief Representation in RL</span>
-    </div>
-  </div>
-</main>
-
-<!-- ══════════════════════════════════════════
-     TAB: PAPERS
-══════════════════════════════════════════ -->
-<main id="tab-papers" class="page" role="tabpanel">
-  <div class="section">
-    <div class="section-label">Publications & Preprints</div>
-
-    <div class="paper-row">
-      <span class="paper-venue">COLM 2026</span>
-      <div class="paper-title">
-        Breaking the Mirror: Adversarial Self-Play for Sycophancy Reduction
-        <span>AdverSplay-GRPO · Qwen3-32B · In Preparation</span>
-      </div>
-      <span class="badge">Prep</span>
     </div>
 
-    <div class="paper-row">
-      <span class="paper-venue">ICLR 2026</span>
-      <div class="paper-title">
-        AI 4 Peace Workshop
-        <span>Oral Presentation</span>
-      </div>
-      <span class="badge gold">Oral ◆</span>
+    <!-- RECENT NEWS -->
+    <div class="sec">
+      <div class="sec-head">Recent</div>
+      <ul class="plain">
+        <li>ICLR 2026 — AI 4 Peace Workshop — <strong>Oral Presentation</strong></li>
+        <li>Accepted: AIM Intelligence AI Safety Compute Grant, South Korea — PI</li>
+        <li>Co-leading AI Safety Camp 2026 (11th edition), AI Control track — invited by Justin Shenk</li>
+        <li>AISTATS 2026 — Calibration Collapse paper — conditional accept, revision in progress</li>
+        <li>EVALEVAL Coalition — invited by Irene Solaiman (Hugging Face) &amp; Anka Reuel (Stanford)</li>
+        <li>3rd Prize — CBRN AI Risk Research Sprint, Apart Research</li>
+        <li>Featured in Bloomberg — Intelligence Symbiosis Manifesto signatory</li>
+      </ul>
     </div>
-
-    <div class="paper-row">
-      <span class="paper-venue">ACL 2026</span>
-      <div class="paper-title">
-        Mechanistic Origins of Specification Gaming
-        <span>With Amirali Abdullah (Thoughtworks)</span>
-      </div>
-      <span class="badge">Under Review</span>
-    </div>
-
-    <div class="paper-row">
-      <span class="paper-venue">ICML 2026</span>
-      <div class="paper-title">
-        Propaganda is an Objective, Not Content
-        <span>Agents in the Wild Workshop</span>
-      </div>
-      <span class="badge">In Preparation</span>
-    </div>
-
-    <div class="paper-row">
-      <span class="paper-venue">ICML 2026</span>
-      <div class="paper-title">
-        Structured Ignorance Certificates
-        <span>EIML Workshop</span>
-      </div>
-      <span class="badge">Active</span>
-    </div>
-
-    <div class="paper-row">
-      <span class="paper-venue">RLC 2026</span>
-      <div class="paper-title">
-        Belief Geometry in Deep Reinforcement Learning
-        <span>With Prof. Fernando Rosas, University of Sussex · MARS 4.0</span>
-      </div>
-      <span class="badge">Under Review</span>
-    </div>
-
-    <div class="paper-row">
-      <span class="paper-venue">AISTATS 2026</span>
-      <div class="paper-title">
-        Calibration Collapse Under Sycophantic Fine-Tuning
-        <span>Conditional Accept — revision in progress</span>
-      </div>
-      <span class="badge gold">Cond. Accept</span>
-    </div>
-
-    <div class="paper-row">
-      <span class="paper-venue">AAAI 2026</span>
-      <div class="paper-title">
-        Bridge LM Reasoning Workshop
-        <span></span>
-      </div>
-      <span class="badge gold">Accepted</span>
-    </div>
-
-    <div class="paper-row">
-      <span class="paper-venue">NeurIPS 2025</span>
-      <div class="paper-title">
-        4 Workshop Papers: ARLET, ACA, ResponsibleFM, E-SARS
-        <span></span>
-      </div>
-      <span class="badge gold">Accepted</span>
-    </div>
-
-    <div class="paper-row">
-      <span class="paper-venue">ACM ICVGIP</span>
-      <div class="paper-title">
-        2025
-        <span></span>
-      </div>
-      <span class="badge gold">Accepted</span>
-    </div>
-
-    <div class="paper-row">
-      <span class="paper-venue">arXiv</span>
-      <div class="paper-title">
-        The Headless Agent Problem in Military AI
-        <span>arXiv:2603.03515</span>
-      </div>
-      <span class="badge">Preprint</span>
-    </div>
-
-    <div class="paper-row">
-      <span class="paper-venue">arXiv</span>
-      <div class="paper-title">
-        SAHOO: Recursive Self-Improvement Under Alignment Constraints
-        <span>arXiv:2603.06333</span>
-      </div>
-      <span class="badge">Preprint</span>
-    </div>
-
-  </div>
-
-  <div class="section">
-    <div class="section-label">Profiles</div>
-    <div class="tags">
-      <a class="tag" href="https://scholar.google.com/citations?user=nCPzp6YAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
-      <a class="tag" href="https://github.com/SubramanyamSahoo" target="_blank" rel="noopener">GitHub ↗</a>
-      <a class="tag" href="https://huggingface.co/SahoobhAI" target="_blank" rel="noopener">HuggingFace ↗</a>
-      <a class="tag" href="https://medium.com/@wsubramanyamsahoo" target="_blank" rel="noopener">Medium ↗</a>
-    </div>
-  </div>
-</main>
-
-<!-- ══════════════════════════════════════════
-     TAB: ACHIEVEMENTS
-══════════════════════════════════════════ -->
-<main id="tab-achievements" class="page" role="tabpanel">
-
-  <div class="section">
-    <div class="section-label">Current Involvement</div>
-    <div class="inv-item">
-      <div class="inv-bar"></div>
-      <div>
-        <div class="inv-title">Co-Lead — AI Safety Camp 2026 (11th edition), AI Control Track</div>
-        <div class="inv-sub">Invited by Justin Shenk</div>
-      </div>
-    </div>
-    <div class="inv-item">
-      <div class="inv-bar"></div>
-      <div>
-        <div class="inv-title">Research Mentee — EleutherAI, ESOAR Initiative</div>
-        <div class="inv-sub">Open-source alignment research</div>
-      </div>
-    </div>
-    <div class="inv-item">
-      <div class="inv-bar"></div>
-      <div>
-        <div class="inv-title">EVALEVAL Coalition Member</div>
-        <div class="inv-sub">Invited by Irene Solaiman (Hugging Face) and Anka Reuel (Stanford University)</div>
-      </div>
-    </div>
-    <div class="inv-item">
-      <div class="inv-bar"></div>
-      <div>
-        <div class="inv-title">MARS 4.0 Fellow — Cambridge AI Safety Hub</div>
-        <div class="inv-sub">Collaborating with Prof. Fernando Rosas, University of Sussex</div>
-      </div>
-    </div>
-    <div class="inv-item">
-      <div class="inv-bar"></div>
-      <div>
-        <div class="inv-title">Peer Reviewer — ACL 2026 EvalEval Workshop</div>
-        <div class="inv-sub">Science of evaluation</div>
-      </div>
-    </div>
-    <div class="inv-item">
-      <div class="inv-bar"></div>
-      <div>
-        <div class="inv-title">Intelligence Symbiosis Manifesto — Signatory</div>
-        <div class="inv-sub">Covered in Bloomberg</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-label">Grants & Fellowships</div>
-    <div class="grants-grid">
-      <div class="g-card">
-        <div class="g-title">AI Safety Compute Grant</div>
-        <div class="g-org">AIM Intelligence · South Korea · PI</div>
-      </div>
-      <div class="g-card">
-        <div class="g-title">Inaugural Research Grant</div>
-        <div class="g-org">PI · Supported by Philip Quirke</div>
-      </div>
-      <div class="g-card">
-        <div class="g-title">CORDA Democracy Fellowship</div>
-        <div class="g-org">Open Democracy Institute</div>
-      </div>
-      <div class="g-card">
-        <div class="g-title">MARS 4.0 Fellowship</div>
-        <div class="g-org">Cambridge AI Safety Hub</div>
-      </div>
-      <div class="g-card">
-        <div class="g-title">HRAIM 2024</div>
-        <div class="g-org">MILA · Full fee waiver</div>
-      </div>
-      <div class="g-card">
-        <div class="g-title">YC Startup School 2026</div>
-        <div class="g-org">Y Combinator · India</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-label">Recognition & Awards</div>
-    <div class="rec-row"><span class="rec-marker">◆</span><span class="rec-text">ICLR 2026 — AI 4 Peace Workshop — <strong style="color:var(--gold)">Oral Presentation</strong></span></div>
-    <div class="rec-row"><span class="rec-marker">◆</span><span class="rec-text">Gold Medalist — M.Tech in AI, NIT Hamirpur (2024), summa cum laude, department topper</span></div>
-    <div class="rec-row"><span class="rec-marker">◆</span><span class="rec-text">3rd Prize — CBRN AI Risk Research Sprint, Apart Research</span></div>
-    <div class="rec-row"><span class="rec-marker">◆</span><span class="rec-text">Bloomberg coverage — Intelligence Symbiosis Manifesto signatory</span></div>
-    <div class="rec-row"><span class="rec-marker">◆</span><span class="rec-text">Guest Speaker — 2024 Odisha AI Conference on AI Safety and Alignment</span></div>
-    <div class="rec-row"><span class="rec-marker">◆</span><span class="rec-text">Cooperative AI Foundation — Introduction to Cooperative AI course, accepted</span></div>
-  </div>
-
-  <div class="section">
-    <div class="section-label">Selected Programs</div>
-    <div class="rec-row"><span class="rec-marker">—</span><span class="rec-text">AI Safety Camp 2026 (11th edition) — Co-lead</span></div>
-    <div class="rec-row"><span class="rec-marker">—</span><span class="rec-text">RLSS Milan 2026 — Applied</span></div>
-    <div class="rec-row"><span class="rec-marker">—</span><span class="rec-text">FAR.AI — Direct outreach from research engineer, under consideration</span></div>
-    <div class="rec-row"><span class="rec-marker">—</span><span class="rec-text">ACM India Summer School 2024 — Led group at IIT Madras (Mechanistic Interpretability)</span></div>
-    <div class="rec-row"><span class="rec-marker">—</span><span class="rec-text">Apart Research AI Control Hackathon — Latent Sabotage project (deceptive alignment)</span></div>
-    <div class="rec-row"><span class="rec-marker">—</span><span class="rec-text">BlueDot Technical AI Safety Course — Completed</span></div>
-    <div class="rec-row"><span class="rec-marker">—</span><span class="rec-text">BlueDot Bio-Security Course — Completed</span></div>
   </div>
 
 </main>
 
-<!-- ══════════════════════════════════════════
-     TAB: ABOUT
-══════════════════════════════════════════ -->
-<main id="tab-about" class="page" role="tabpanel">
-  <div class="section">
-    <div class="section-label">Who I Am</div>
-    <p class="bio">
-      I am an <strong>independent AI safety researcher</strong> based in Cuttack, Odisha, India. My work sits at the intersection of alignment science, mechanistic interpretability, and AI governance — with a specific focus on what breaks alignment under adversarial conditions and why.<br><br>
-      Before independent research I completed an <strong>M.Tech in Artificial Intelligence</strong> at NIT Hamirpur, graduating as gold medalist and department topper under Dr. Kamlesh Dutta. Prior to that, a <strong>B.Tech in Computer Science</strong> from Parala Maharaja Engineering College under Dr. Debasis Mohapatra.<br><br>
-      I work with <strong>Prof. Fernando Rosas</strong> (University of Sussex) on belief geometry in deep RL through the MARS 4.0 program at the Cambridge AI Safety Hub, and with <strong>Amirali Abdullah</strong> (Thoughtworks) on mechanistic interpretability.
-    </p>
-  </div>
+<!-- ════════════════════════════
+     PUBLICATIONS
+════════════════════════════ -->
+<main id="tab-publications" class="page">
+  <div class="wrap">
 
-  <div class="section">
-    <div class="section-label">Education</div>
-    <div class="edu-row">
-      <div class="edu-year">2022 – 2024</div>
-      <div>
-        <div class="edu-deg">M.Tech in Artificial Intelligence — Gold Medalist, Summa Cum Laude</div>
-        <div class="edu-inst">National Institute of Technology Hamirpur · Under Dr. Kamlesh Dutta</div>
+    <div class="sec">
+      <div class="sec-head">Alignment &amp; Safety</div>
+      <div class="pub-row">
+        <div class="p-venue">COLM 2026</div>
+        <div>
+          <div class="p-title">Breaking the Mirror: Adversarial Self-Play for Sycophancy Reduction <span class="bdg">Prep</span></div>
+          <div class="p-authors">Subramanyam Sahoo</div>
+          <div class="p-meta">AdverSplay-GRPO · Qwen3-32B · Dual LoRA · 89.3% reduction</div>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="p-venue">AISTATS 2026</div>
+        <div>
+          <div class="p-title">Calibration Collapse Under Sycophantic Fine-Tuning <span class="bdg acc">Cond. Accept</span></div>
+          <div class="p-authors">Subramanyam Sahoo</div>
+          <div class="p-meta">Matrix scaling experiments · Revision in progress</div>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="p-venue">ICLR 2026</div>
+        <div>
+          <div class="p-title">AI 4 Peace Workshop <span class="bdg oral">Oral ★</span></div>
+          <div class="p-authors">Subramanyam Sahoo</div>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="p-venue">ICML 2026</div>
+        <div>
+          <div class="p-title">Structured Ignorance Certificates <span class="bdg rev">Active</span></div>
+          <div class="p-authors">Subramanyam Sahoo</div>
+          <div class="p-meta">EIML Workshop · Qwen3-14B · Lambda Labs A100</div>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="p-venue">ICML 2026</div>
+        <div>
+          <div class="p-title">Propaganda is an Objective, Not Content <span class="bdg">Prep</span></div>
+          <div class="p-authors">Subramanyam Sahoo</div>
+          <div class="p-meta">Agents in the Wild Workshop</div>
+        </div>
       </div>
     </div>
-    <div class="edu-row">
-      <div class="edu-year">2018 – 2022</div>
-      <div>
-        <div class="edu-deg">B.Tech in Computer Science and Engineering (with Honours)</div>
-        <div class="edu-inst">Parala Maharaja Engineering College, BPUT Odisha · Under Dr. Debasis Mohapatra</div>
+
+    <div class="sec">
+      <div class="sec-head">Interpretability &amp; Reasoning</div>
+      <div class="pub-row">
+        <div class="p-venue">ACL 2026</div>
+        <div>
+          <div class="p-title">Mechanistic Origins of Specification Gaming <span class="bdg rev">Under Review</span></div>
+          <div class="p-authors">Subramanyam Sahoo, Amirali Abdullah</div>
+          <div class="p-meta">Activation patching · Attention head ablation · Causal tracing</div>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="p-venue">AAAI 2026</div>
+        <div>
+          <div class="p-title">Bridge LM Reasoning Workshop <span class="bdg acc">Accepted</span></div>
+          <div class="p-authors">Subramanyam Sahoo</div>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="p-venue">NeurIPS 2025</div>
+        <div>
+          <div class="p-title">Workshop papers: ARLET, ACA, ResponsibleFM, E-SARS <span class="bdg acc">4 Accepted</span></div>
+          <div class="p-authors">Subramanyam Sahoo</div>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="p-venue">ACM ICVGIP</div>
+        <div>
+          <div class="p-title">2025 <span class="bdg acc">Accepted</span></div>
+          <div class="p-authors">Subramanyam Sahoo</div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="section">
-    <div class="section-label">Contact & Profiles</div>
-    <div class="tags">
-      <a class="tag" href="https://scholar.google.com/citations?user=nCPzp6YAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
-      <a class="tag" href="https://github.com/SubramanyamSahoo" target="_blank" rel="noopener">GitHub ↗</a>
-      <a class="tag" href="https://huggingface.co/SahoobhAI" target="_blank" rel="noopener">HuggingFace ↗</a>
-      <a class="tag" href="https://www.linkedin.com/in/sahoosubramanyam/" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a class="tag" href="https://x.com/iamwsubramanyam" target="_blank" rel="noopener">X / Twitter ↗</a>
-      <a class="tag" href="https://medium.com/@wsubramanyamsahoo" target="_blank" rel="noopener">Medium ↗</a>
+    <div class="sec">
+      <div class="sec-head">Reinforcement Learning</div>
+      <div class="pub-row">
+        <div class="p-venue">RLC 2026</div>
+        <div>
+          <div class="p-title">Belief Geometry in Deep Reinforcement Learning <span class="bdg rev">Under Review</span></div>
+          <div class="p-authors">Subramanyam Sahoo, Fernando Rosas</div>
+          <div class="p-meta">MARS 4.0 · Cambridge AI Safety Hub · R² > 0.993 decodability</div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="quote-block">
-    <blockquote>"What I know is a drop, and what I don't know is a sea."</blockquote>
-    <p class="quote-attr">— Isaac Newton</p>
+    <div class="sec">
+      <div class="sec-head">Governance &amp; Preprints</div>
+      <div class="pub-row">
+        <div class="p-venue">Preprint</div>
+        <div>
+          <div class="p-title">The Headless Agent Problem in Military AI</div>
+          <div class="p-authors">Subramanyam Sahoo</div>
+          <div class="p-meta">Alignment failures from institutional structures in autonomous weapons systems</div>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="p-venue">Preprint</div>
+        <div>
+          <div class="p-title">SAHOO: Recursive Self-Improvement Under Alignment Constraints</div>
+          <div class="p-authors">Subramanyam Sahoo</div>
+          <div class="p-meta">GitHub: SubramanyamSahoo/SAHOO-in-Recursive-Self-Improvement</div>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="p-venue">Preprint</div>
+        <div>
+          <div class="p-title">The Containment Fallacy</div>
+          <div class="p-authors">Subramanyam Sahoo</div>
+          <div class="p-meta">Why alignment fine-tuning cannot remove Machiavellian knowledge from model weights</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head">Profiles</div>
+      <div class="tags">
+        <a class="tag" href="https://scholar.google.com/citations?user=nCPzp6YAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
+        <a class="tag" href="https://github.com/SubramanyamSahoo" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="tag" href="https://huggingface.co/SahoobhAI" target="_blank" rel="noopener">HuggingFace ↗</a>
+        <a class="tag" href="https://medium.com/@wsubramanyamsahoo" target="_blank" rel="noopener">Medium ↗</a>
+      </div>
+    </div>
+
   </div>
 </main>
 
-<!-- FOOTER -->
+<!-- ════════════════════════════
+     SOFTWARE
+════════════════════════════ -->
+<main id="tab-software" class="page">
+  <div class="wrap">
+    <div class="sec">
+      <div class="sec-head">Open-Source Projects</div>
+      <div class="pub-row">
+        <div class="p-venue">GitHub</div>
+        <div>
+          <div class="p-title"><a href="https://github.com/SubramanyamSahoo/SAHOO-in-Recursive-Self-Improvement" target="_blank" rel="noopener">SAHOO Framework ↗</a></div>
+          <div class="p-authors">Recursive self-improvement under alignment constraints</div>
+          <div class="p-meta">Python · PyTorch · FOMAML meta-learning · Differentiable mortality operator · EWC baselines</div>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="p-venue">Framework</div>
+        <div>
+          <div class="p-title">AdverSplay-GRPO</div>
+          <div class="p-authors">Adversarial self-play framework for sycophancy reduction</div>
+          <div class="p-meta">Dual LoRA adapters · Frozen Qwen3-32B base · Group Relative Policy Optimisation · Lambda Labs GH200 / A100</div>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="p-venue">Hackathon</div>
+        <div>
+          <div class="p-title"><a href="https://apartresearch.com/project/molecules-under-watch-multi-modal-ai-driven-threat-emergence-detection-for-biosecurity-7x9q" target="_blank" rel="noopener">Latent Sabotage ↗</a></div>
+          <div class="p-authors">Apart Research AI Control Hackathon</div>
+          <div class="p-meta">Geometric fingerprints of deceptive alignment in backdoored LLMs · 3rd Prize, CBRN AI Risk Sprint</div>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="p-venue">HuggingFace</div>
+        <div>
+          <div class="p-title"><a href="https://huggingface.co/SahoobhAI" target="_blank" rel="noopener">SahoobhAI ↗</a></div>
+          <div class="p-authors">Model checkpoints and datasets</div>
+          <div class="p-meta">Alignment experiments · LoRA adapters · Evaluation artifacts</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head">Infrastructure</div>
+      <ul class="plain">
+        <li>Lambda Labs GH200 and A100 — primary compute for adversarial self-play and structured ignorance experiments</li>
+        <li>Modal cloud compute — reasoning-induced goal drift experiments</li>
+        <li>Qwen3-32B, Qwen3-14B, GPT-2 Large, Llama-2-13B — primary model testbeds</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<!-- ════════════════════════════
+     TALKS
+════════════════════════════ -->
+<main id="tab-talks" class="page">
+  <div class="wrap">
+    <div class="sec">
+      <div class="sec-head">Invited Talks &amp; Presentations</div>
+      <div class="inv-row">
+        <div class="i-year">2026</div>
+        <div>
+          <div class="i-title">ICLR 2026 — AI 4 Peace Workshop <span class="bdg oral">Oral</span></div>
+          <div class="i-sub">Oral presentation — one of the most competitive slots at the workshop</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">2024</div>
+        <div>
+          <div class="i-title">Odisha AI Conference — AI Safety and Alignment</div>
+          <div class="i-sub">Guest speaker · 5 October 2024 · Bhubaneswar, Odisha</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">2024</div>
+        <div>
+          <div class="i-title">ACM India Summer School — Interpretable AI, IIT Madras</div>
+          <div class="i-sub">Led group project on mechanistic interpretability of algorithmic sequence problems · Responsible and Safe AI track</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">2024</div>
+        <div>
+          <div class="i-title">Live Q&amp;A with Prof. David Krueger (University of Cambridge)</div>
+          <div class="i-sub">Presented 2 questions on AI safety in public session</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">2024</div>
+        <div>
+          <div class="i-title">Live Q&amp;A with Dr. Sudarsan Padmanabhan (IIT Madras)</div>
+          <div class="i-sub">Presented question on AI alignment and governance</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">2023</div>
+        <div>
+          <div class="i-title">Orientation for B.Tech AI/ML Students — NIT Kurukshetra</div>
+          <div class="i-sub">Invited talk on AI safety and research directions</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">2023</div>
+        <div>
+          <div class="i-title">Seminar on Recent Trends in AI — Dept. of CSE, NIT Hamirpur</div>
+          <div class="i-sub">Departmental seminar covering LLM advances and safety implications</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ════════════════════════════
+     GROUP
+════════════════════════════ -->
+<main id="tab-group" class="page">
+  <div class="wrap">
+    <div class="sec">
+      <div class="sec-head">Collaborators</div>
+      <div class="inv-row">
+        <div class="i-year">Sussex</div>
+        <div>
+          <div class="i-title">Prof. Fernando Rosas</div>
+          <div class="i-sub">University of Sussex · Belief geometry in deep RL · MARS 4.0, Cambridge AI Safety Hub</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">Industry</div>
+        <div>
+          <div class="i-title">Amirali Abdullah</div>
+          <div class="i-sub">Thoughtworks · Mechanistic interpretability · ACL 2026 joint submission</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">Community</div>
+        <div>
+          <div class="i-title">EleutherAI — ESOAR Initiative</div>
+          <div class="i-sub">Research mentee · Open-source alignment research</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">Coalition</div>
+        <div>
+          <div class="i-title">EVALEVAL Coalition</div>
+          <div class="i-sub">Irene Solaiman (Hugging Face) · Anka Reuel (Stanford) · Science of evaluations</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">Camp</div>
+        <div>
+          <div class="i-title">AI Safety Camp 2026 — Team Co-lead</div>
+          <div class="i-sub">AI Control track · Invited by Justin Shenk · 11th edition</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head">Open to</div>
+      <p style="font-size:.96rem;color:var(--muted);margin-bottom:1.25rem;max-width:54ch;">
+        I am open to research collaborations, especially with people working at the intersection of any of the following:
+      </p>
+      <div class="tags">
+        <span class="tag">LLM Post-training</span>
+        <span class="tag">Mechanistic Interpretability</span>
+        <span class="tag">AI Control</span>
+        <span class="tag">Adversarial Robustness</span>
+        <span class="tag">Cooperative AI</span>
+        <span class="tag">Science of Evaluations</span>
+        <span class="tag">AI Policy &amp; Governance</span>
+        <span class="tag">Belief Geometry in RL</span>
+        <span class="tag">Autonomous AI Agents</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ════════════════════════════
+     TEACHING
+════════════════════════════ -->
+<main id="tab-teaching" class="page">
+  <div class="wrap">
+    <div class="sec">
+      <div class="sec-head">Teaching Assistant — NIT Hamirpur</div>
+      <div class="inv-row">
+        <div class="i-year">Sem 4</div>
+        <div>
+          <div class="i-title">CS-661 Deep Learning — Teaching Assistant &amp; Project Supervisor</div>
+          <div class="i-sub">Dual Degree CS · 4th Year · 8th Semester</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">Sem 4</div>
+        <div>
+          <div class="i-title">CS-326 Computer Networks Lab — Teaching &amp; Lab Assistant</div>
+          <div class="i-sub">B.Tech CS · 3rd Year · 6th Semester</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">Sem 4</div>
+        <div>
+          <div class="i-title">CS-429 Major Project Stage 2 — Assistant Supervisor</div>
+          <div class="i-sub">B.Tech CS · 4th Year · Guided 10+ students</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">Sem 3</div>
+        <div>
+          <div class="i-title">CS-652 Machine Learning — Teaching Assistant &amp; Project Supervisor</div>
+          <div class="i-sub">Dual Degree CS · 4th Year · 7th Semester</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">Sem 3</div>
+        <div>
+          <div class="i-title">CS-315 Database Management Systems Lab — Teaching &amp; Lab Assistant</div>
+          <div class="i-sub">B.Tech CS · 3rd Year · 5th Semester</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">Sem 2</div>
+        <div>
+          <div class="i-title">CS-101 Computer Programming — Teaching Assistant</div>
+          <div class="i-sub">B.Tech EE · 1st Year · 2nd Semester</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">Sem 1</div>
+        <div>
+          <div class="i-title">CS-102 Computer Programming Lab — Teaching &amp; Lab Assistant</div>
+          <div class="i-sub">B.Tech CS · 1st Year · 1st Semester</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head">Invited Teaching</div>
+      <div class="inv-row">
+        <div class="i-year">2023</div>
+        <div>
+          <div class="i-title">Orientation for B.Tech AI/ML Students — NIT Kurukshetra</div>
+          <div class="i-sub">Invited talk and orientation session</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">2023</div>
+        <div>
+          <div class="i-title">Class of 50+ Dual Degree Students — NIT Hamirpur</div>
+          <div class="i-sub">Guest lecture as Teaching Assistant on AI safety and deep learning</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ════════════════════════════
+     SERVICE
+════════════════════════════ -->
+<main id="tab-service" class="page">
+  <div class="wrap">
+    <div class="sec">
+      <div class="sec-head">Peer Review</div>
+      <ul class="plain">
+        <li>ACL 2026 — EvalEval Workshop — Peer Reviewer</li>
+        <li>EVALEVAL Coalition — Science of Evaluations — active member</li>
+      </ul>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head">Grants &amp; Fellowships</div>
+      <div class="g-grid">
+        <div class="g-card">
+          <div class="g-title">AI Safety Compute Grant</div>
+          <div class="g-org">AIM Intelligence · South Korea · PI</div>
+        </div>
+        <div class="g-card">
+          <div class="g-title">Inaugural Research Grant</div>
+          <div class="g-org">PI · Supported by Philip Quirke</div>
+        </div>
+        <div class="g-card">
+          <div class="g-title">CORDA Democracy Fellowship</div>
+          <div class="g-org">Open Democracy Institute</div>
+        </div>
+        <div class="g-card">
+          <div class="g-title">MARS 4.0 Fellowship</div>
+          <div class="g-org">Cambridge AI Safety Hub</div>
+        </div>
+        <div class="g-card">
+          <div class="g-title">HRAIM 2024</div>
+          <div class="g-org">MILA · Full fee waiver</div>
+        </div>
+        <div class="g-card">
+          <div class="g-title">YC Startup School 2026</div>
+          <div class="g-org">Y Combinator · India</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head">Community</div>
+      <ul class="plain">
+        <li>Cooperative AI Foundation — Introduction to Cooperative AI course — completed</li>
+        <li>BlueDot Technical AI Safety Course — completed</li>
+        <li>BlueDot Bio-Security Course — completed</li>
+        <li>Intelligence Symbiosis Manifesto — signatory · covered in Bloomberg</li>
+        <li>Organizer — AMRIT 2023 National Conference on Marketing Paradigms, NIT Hamirpur</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<!-- ════════════════════════════
+     EXTRACURRICULARS
+════════════════════════════ -->
+<main id="tab-extra" class="page">
+  <div class="wrap">
+    <div class="sec">
+      <div class="sec-head">Competitions &amp; Sprints</div>
+      <div class="inv-row">
+        <div class="i-year">2025</div>
+        <div>
+          <div class="i-title">CBRN AI Risk Research Sprint — 3rd Prize</div>
+          <div class="i-sub">Apart Research · Biosecurity and multi-modal AI threat detection</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">2025</div>
+        <div>
+          <div class="i-title">Apart Research AI Control Hackathon — Latent Sabotage</div>
+          <div class="i-sub">Geometric fingerprints of deceptive alignment in backdoored LLMs</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <div class="i-year">2024</div>
+        <div>
+          <div class="i-title">ACM India Summer School — Multiple selections</div>
+          <div class="i-sub">IIT Madras · IIT Gandhinagar · Responsible and Safe AI track</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head">Academic Recognition</div>
+      <ul class="plain">
+        <li>Gold Medalist — M.Tech in AI, NIT Hamirpur (2024), summa cum laude, department topper (2022–2024 batch)</li>
+        <li>B.Tech with Honours — Computer Science and Engineering, Parala Maharaja Engineering College, BPUT Odisha</li>
+        <li>ICLR 2026 — Oral presentation, AI 4 Peace Workshop</li>
+        <li>Featured in Bloomberg — Intelligence Symbiosis Manifesto signatory</li>
+      </ul>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head">People &amp; Interactions</div>
+      <ul class="plain">
+        <li>Discussed "Weak to Strong Generalization" with Stephen Casper, Algorithmic Alignment Group, MIT EECS — IIT Madras</li>
+        <li>Live Q&amp;A with Prof. David Krueger, University of Cambridge — 2 questions on AI safety</li>
+        <li>Live Q&amp;A with Prof. Mausam, IIT Delhi — IIT Gandhinagar</li>
+        <li>Guest speaker, 2024 Odisha AI Conference on AI Safety and Alignment</li>
+      </ul>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head">Media</div>
+      <ul class="plain">
+        <li><a href="https://www.bloomberg.com/opinion/articles/2025-06-18/ai-safety-make-the-robot-your-colleague-not-overlord" target="_blank" rel="noopener">Bloomberg — Intelligence Symbiosis Manifesto coverage ↗</a></li>
+        <li><a href="https://medium.com/@wsubramanyamsahoo" target="_blank" rel="noopener">Medium — Writing on AI safety and alignment ↗</a></li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<!-- ── FOOTER ── -->
 <footer>
-  <span class="footer-left">Subramanyam Sahoo · AI Safety Researcher · 2025</span>
-  <div class="footer-right">
-    <a href="https://scholar.google.com/citations?user=nCPzp6YAAAAJ" target="_blank" rel="noopener">Scholar</a>
-    <a href="https://github.com/SubramanyamSahoo" target="_blank" rel="noopener">GitHub</a>
-    <a href="https://x.com/iamwsubramanyam" target="_blank" rel="noopener">Twitter</a>
-    <a href="https://www.linkedin.com/in/sahoosubramanyam/" target="_blank" rel="noopener">LinkedIn</a>
+  <div class="footer-inner">
+    <span>Subramanyam Sahoo · AI Safety Researcher · 2025</span>
+    <span>
+      <a href="https://scholar.google.com/citations?user=nCPzp6YAAAAJ" target="_blank" rel="noopener">Scholar</a> ·
+      <a href="https://github.com/SubramanyamSahoo" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://x.com/iamwsubramanyam" target="_blank" rel="noopener">Twitter</a> ·
+      <a href="https://www.linkedin.com/in/sahoosubramanyam/" target="_blank" rel="noopener">LinkedIn</a>
+    </span>
   </div>
 </footer>
 
 <script>
-  const tabs = document.querySelectorAll('.nav-tab');
+  const tabs  = document.querySelectorAll('.nav-tab');
   const pages = document.querySelectorAll('.page');
 
+  function switchTab(id) {
+    tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+    pages.forEach(p => p.classList.remove('active'));
+    const tab = document.querySelector(`[data-tab="${id}"]`);
+    if (tab) { tab.classList.add('active'); tab.setAttribute('aria-selected','true'); }
+    const page = document.getElementById('tab-' + id);
+    if (page) page.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const target = tab.dataset.tab;
-
-      tabs.forEach(t => {
-        t.classList.remove('active');
-        t.setAttribute('aria-selected', 'false');
-      });
-      pages.forEach(p => p.classList.remove('active'));
-
-      tab.classList.add('active');
-      tab.setAttribute('aria-selected', 'true');
-      document.getElementById('tab-' + target).classList.add('active');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    tab.addEventListener('click', () => switchTab(tab.dataset.tab));
   });
 </script>
 

@@ -1,0 +1,13 @@
+title: "Subramanyam Sahoo"
+description: "Independent AI safety researcher working on adversarial alignment, mechanistic interpretability, and AI governance."
+url: "https://subramanyamsahoo.github.io"
+baseurl: ""
+author: "Subramanyam Sahoo"
+twitter_username: iamwsubramanyam
+github_username: SubramanyamSahoo
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+lang: en
